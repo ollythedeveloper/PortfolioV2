@@ -1,0 +1,234 @@
+/*format of logo image in the footer*/
+.logo {
+  width: 220px;
+  border: 2px solid #000;
+}
+
+/*format of the page body*/
+body{
+  background-color:#000;
+  background-image: url(images/salt-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 10px solid #000;
+  padding: 10px;
+  height: 1000x;
+}
+
+/*format/style of the page header*/
+header{
+  background-color: #00B3E6;
+  background-image: url(images/cool-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 10px;
+  border: 5px solid #E171AC;
+}
+/* Header Navigation*/
+header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-family: fantasy;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 30px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #00B3E6;;
+}
+
+/*fomat/syle of the page footer*/
+footer {
+  margin: 10px;
+  padding: 10px;
+  background-color: #00B3E6;
+  background-image: url(images/cool-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 5px solid #E171AC;
+  height: 150px;
+}
+
+/*format/style of main div*/
+.solid{
+  margin: 10px;
+  padding: 10px;
+}
+
+/*format/style of all the horizontal lines*/
+hr {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #4F518C;
+  background-color: #00B3E6;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transform: rotate(45deg);
+}
+
+/*format/style of h1 text (only my name in header)*/
+h1{
+  font-family: 'American Typewriter',SignPainter,'HanziPen SC',fantasy;
+  color: #000;
+  text-align: center;
+  font-size: 70px;
+}
+
+/*format/style of all h2 text*/
+h2{
+  font-family: 'American Typewriter';
+  font-size: 40px;
+  color: #E171AC;
+  text-align: center;
+  margin: 10px;
+}
+
+/*format/style of h3, h4, p, li text*/
+h3, h4, p, li {
+  font-family:'Times New Roman';
+  color: #fff;
+  text-align: center;
+  align-content: center;
+}
+
+/*font size of h3 text in main body of page*/
+h3{
+  font-size: 30px;
+}
+
+/* h4 font size*/
+h4{
+  font-size: 23px;
+}
+
+/* p and li font size*/
+p,li {
+  font-size: 20px;
+}
+
+/*format of ordered and unordered lists*/
+div{
+  text-align: center;
+}
+ol, ul {
+  display: inline-block;
+  text-align: left;
+}
+
+/* format of links*/
+main a {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+}
+
+main a:link { color: #E171AC;}
+main a:visited { color: #00B3E6;}
+main a:hover { color: #fff;}
+main a:active{ color: aqua;}
+
+/*format/style of header and footer h3 text*/
+header h3, footer h3{
+  font-family: /*'Comic Sans MS',*/ 'Times New Roman';
+  color:/*#4F518C*/#000;
+  font-size: 45px;
+}
+
+/* Groups and Items */
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double{
+  flex: 2;
+  margin: 10px;
+}
+
+.item img{
+  width: 100%;
+  border: 5px solid #000;
+  margin-top: 20px;
+}
+
+.item-double img {
+  width: 100%;
+  border: 5px solid #000;
+}
+
+/*Groups and Items (Desktop)*/
+@media all and (min-width: 800px){
+  section {
+    padding: 0 10%;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header nav{
+    margin-top: 60px;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+/*Contact Form Layout*/
+form {
+  padding-right: 6px;
+}
+
+form input,
+form textarea{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+.form-txt {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/*Contact area text alignment*/
+.left-side,
+.left-side p, 
+.left-side h2 {
+  text-align: left;
+}
